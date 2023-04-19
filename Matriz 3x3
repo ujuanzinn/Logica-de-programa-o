@@ -1,0 +1,33 @@
+# Logica-de-programa-o
+Programas feitos do curso técnico de TI
+programa {
+  funcao inicio() {
+
+    inteiro matriz[3][3]
+    inteiro i, j, soma
+
+    soma = 0
+
+    para (i = 0; i < 3; i++)
+    {
+      para (j = 0; j < 3; j++)
+      {
+        escreva ("[", i, "] x [", j, "]: ")
+        leia (matriz[i][j])
+      }
+    }
+
+    para (i = 0; i < 3; i++)
+    {
+      para (j = 0; j < 3; j++)
+      {
+        se (j==i) {
+          soma = soma + matriz[i][j]
+        }
+      }
+    }
+
+    escreva (soma)
+   
+  }
+}
