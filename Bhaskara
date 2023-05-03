@@ -1,0 +1,35 @@
+
+programa bhaskara
+{
+  inclua biblioteca Matematica --> mat
+  funcao inicio() {
+    real a, b, c, x1, x2, delta, raiz_quadrada
+
+   escreva("Digite o valor de a: ")
+   leia(a)
+   
+   escreva("Digite o valor de b: ")
+   leia(b)
+   
+   escreva("Digite o valor de c: ")
+   leia(c)
+    
+    delta = (b * b) - 4 * a * c
+    escreva ("\n O valor de Delta é: ", delta)
+
+    raiz_quadrada = mat.raiz (delta, 2.0)
+    escreva ("\n A raiz quadrada é: ", raiz_quadrada)
+
+    se (delta >= 0)
+    {
+      x1 = (-b + (raiz_quadrada)) / (2 * a)
+      x2 = (-b - (raiz_quadrada)) / (2 * a)
+    }
+    senao
+    {
+      escreva ("Não ha raizes reais")
+    }
+    escreva ("\n O valor de x1 é: ", x1)
+    escreva ("\n O valor de x2 é: ", x2)
+  }
+}
